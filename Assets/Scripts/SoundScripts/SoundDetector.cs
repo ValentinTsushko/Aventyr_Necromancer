@@ -9,6 +9,7 @@ public class SoundDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.GetComponent<SoundController>().StepsSound(AS);
+        if (other.gameObject.GetComponent<SoundController>()) other.gameObject.GetComponent<SoundController>().StepsSound(AS);
+        else ;
     }
 }
