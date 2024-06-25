@@ -5,7 +5,6 @@ using UnityEngine;
 public class SoundController : MonoBehaviour
 {
     [SerializeField] private List<AudioClip> stepsSound;
-    [SerializeField] private AudioSource footStepsAudio;
     [SerializeField] private float SoundSpeedWalk;
 
     private bool isCanStepSound = true;
@@ -24,13 +23,13 @@ public class SoundController : MonoBehaviour
         }
     }
 
-    public void StepsSound()
+    public void StepsSound(AudioSource AS)
     {
         if (isCanStepSound)
         {
             timer = SoundSpeedWalk;
-            footStepsAudio.clip = stepsSound[Random.Range(0, stepsSound.Count)];
-            footStepsAudio.Play();
+            AS.clip = stepsSound[Random.Range(0, stepsSound.Count)];
+            AS.Play();
             isCanStepSound = false;
         }
     }

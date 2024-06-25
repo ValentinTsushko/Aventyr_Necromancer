@@ -5,14 +5,10 @@ using UnityEngine;
 public class SoundDetector : MonoBehaviour
 {
     [SerializeField] private Collider Detector;
+    [SerializeField] private AudioSource AS;
 
     private void OnTriggerEnter(Collider other)
     {
-        //SoundController SC = other.gameObject.GetComponentInParent<SoundController>;
-        other.gameObject.GetComponent<SoundController>().StepsSound();
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        
+        other.gameObject.GetComponent<SoundController>().StepsSound(AS);
     }
 }
