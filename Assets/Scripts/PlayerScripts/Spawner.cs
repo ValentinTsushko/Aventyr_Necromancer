@@ -5,19 +5,21 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject objectToSpawn;
-
-    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private List<Transform> spawnPoints;
+    [SerializeField] private GameObject spawnPointNewNummer;
 
     void Start()
     {
         SpawnObject();
     }
 
-    void SpawnObject()
+    private void SpawnObject()
     {
-        if (objectToSpawn != null && spawnPoint != null)
+        if (objectToSpawn != null && spawnPoints[spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()] != null)
         {
-            Instantiate(objectToSpawn, spawnPoint.position, spawnPoint.rotation);
+            Debug.Log("spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()  " + spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer());
+            Instantiate(objectToSpawn, spawnPoints[spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()].position
+                , spawnPoints[spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()].rotation);
         }
     }
 }

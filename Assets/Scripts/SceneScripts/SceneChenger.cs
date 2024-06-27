@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition : MonoBehaviour
+public class SceneChenger : MonoBehaviour
 {
     [SerializeField] private string sceneName;
+    [SerializeField] private int spawnPointNummer;
+    [SerializeField] private GameObject spawnPointNewNummer;
 
-    public void LoadScene()
+
+    private void LoadScene()
     {
         SceneManager.LoadScene(sceneName);
     }
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Try to open location: " + sceneName);
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.F))
         {
+            spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().SetSpawnPointNummer(spawnPointNummer);
             LoadScene();
         }
     }
