@@ -230,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1332127508906468322}
   - component: {fileID: 4434864516392508091}
+  - component: {fileID: 5560502826648074140}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Player
@@ -273,6 +274,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5560502826648074140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6081914472217880506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68a5c01f7a873ef4990526093b45a107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryPrefab: {fileID: 779346236660314490, guid: 48245279150616941aca3c31803aba5c, type: 3}
 --- !u!1 &7525996882496143504
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +297,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6910073872560585735}
   - component: {fileID: 1443500018159743055}
-  - component: {fileID: 2604373825687164661}
   - component: {fileID: 8109435921746799447}
+  - component: {fileID: 2604373825687164661}
   - component: {fileID: 279962504767360709}
   m_Layer: 0
   m_Name: Avenir
@@ -364,19 +378,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2604373825687164661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7525996882496143504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a505651913a5a1f439e7c908f5a4221f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 2
 --- !u!54 &8109435921746799447
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -404,6 +405,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2604373825687164661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525996882496143504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a505651913a5a1f439e7c908f5a4221f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!114 &279962504767360709
 MonoBehaviour:
   m_ObjectHideFlags: 0

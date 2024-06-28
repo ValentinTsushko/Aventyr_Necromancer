@@ -17,7 +17,6 @@ public class Spawner : MonoBehaviour
     {
         if (objectToSpawn != null && spawnPoints[spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()] != null)
         {
-            Debug.Log("spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()  " + spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer());
             Instantiate(objectToSpawn, spawnPoints[spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()].position
                 , spawnPoints[spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().GetSpawnPointNummer()].rotation);
         }
