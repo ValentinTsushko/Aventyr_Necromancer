@@ -11,15 +11,24 @@ public class SceneChenger : MonoBehaviour
 
     public static event System.Action OpenF_Button;
 
+    private bool IsInTrigg = false;
+
     private void LoadScene()
     {
         SceneManager.LoadScene(sceneName);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("PlayerTrigger"))
+        if (other.CompareTag("PlayerTrigger") && !IsInTrigg)
         {
             OpenF_Button?.Invoke();
+            IsInTrigg = true;
+        }
+        
+        if (other.CompareTag("PlayerTrigger") && Input.GetKeyDown(KeyCode.F))
+        {
+            spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().SetSpawnPointNummer(spawnPointNummer);
+            LoadScene();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -27,14 +36,7 @@ public class SceneChenger : MonoBehaviour
         if (other.CompareTag("PlayerTrigger"))
         {
             OpenF_Button?.Invoke();
-        }
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.F))
-        {
-            spawnPointNewNummer.GetComponent<NextSpawnPointNummer>().SetSpawnPointNummer(spawnPointNummer);
-            LoadScene();
+            IsInTrigg = false;
         }
     }
 }

@@ -6,16 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Akademia Level/Village near Akkademy.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
     path: Assets/Scenes/Akademia Level/Houses/HouseNearTheGates.unity
     guid: 46f7cda10a10ad44b90699f50a327341
   - enabled: 1
     path: Assets/Scenes/Akademia Level/Houses/HouseNearTheGates_1.unity
     guid: bf9f211a81ecb1446becc2cb7b69be1d
   - enabled: 1
-    path: Assets/Scenes/Akademia Level/Village near Akkademy.unity
-    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 1
     path: Assets/Scenes/Akademia Level/Houses/HouseNearTheGates_2.unity
     guid: eb00ed31ba62c7d44a6580cb656d01a8
+  - enabled: 1
+    path: Assets/Scenes/Akademia Level/Houses/TavernNearGates.unity
+    guid: e48e6d95f5ce40448825af79386f8d2f
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 79c13222e0309a44c95d87ce739ced4a, type: 2}
