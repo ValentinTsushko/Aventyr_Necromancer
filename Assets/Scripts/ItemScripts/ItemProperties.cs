@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemProperties : MonoBehaviour
 {
-    [SerializeField] private int Cost;
-    [SerializeField] private int Damage;
-    [SerializeField] private int PowerOfMagick;
+    public int Cost;
+    public int Damage;
+    public int PowerOfMagick;
 }

@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class SlotScript : MonoBehaviour
 {
-    private bool IsEmpty = true;
+    [SerializeField] private bool IsEmpty = true;
+
+    private void Start()
+    {
+        IsEmpty = true;
+    }
 
     public bool GetIsEmpty()
-    { 
+    {
+        Debug.Log("SlotScript");
         return IsEmpty; 
     }
     public void SetIsEmpty(bool newValue)

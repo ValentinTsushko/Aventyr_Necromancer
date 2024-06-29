@@ -5,27 +5,30 @@ using UnityEngine;
 
 public class InventoryPanelScript : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> Slots = new List<GameObject>();
+    [SerializeField] private List<GameObject> Slots;
     [SerializeField] private Transform inventoryPanel;
-
-    void Start()
-    {
-
-    }
 
     public void AddItem(GameObject NewItem) 
     {
+        Debug.Log("InventoryPanelScript");
         int i = 0;
         while (!Slots[i].GetComponent<SlotScript>().GetIsEmpty()) 
-        { 
+        {
+            Debug.Log(i);
             i++;
         }
-        Component copy = Slots[i].AddComponent<ItemProperties>();
+
+        GameObject slotObject = Slots[i].gameObject;
+        Debug.Log("AddComponent<ItemProperties>()");
+        slotObject.AddComponent<ItemProperties>();
+        Debug.Log("AddComponent<ItemProperties>() added");
+        slotObject.GetComponent<SlotScript>().SetIsEmpty(false);
+
         System.Type type = NewItem.GetType();
         FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
         foreach (FieldInfo field in fields)
         {
-            field.SetValue(copy, field.GetValue(NewItem));
+            field.SetValue(slotObject.GetComponent<ItemProperties>(), field.GetValue(NewItem));
         }
     }
 }

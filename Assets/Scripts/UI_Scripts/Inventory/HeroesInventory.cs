@@ -8,6 +8,7 @@ public class HeroesInventory : MonoBehaviour
 
     public void GetNewItem(GameObject NewItem)
     {
+        Debug.Log("HeroesInventory");
         InventoryPrefab.GetComponent<InventoryPanelScript>().AddItem(NewItem);
     }
 }
