@@ -4,7 +4,7 @@ Shader "Custom/FireShader"
         {
             _MainTex("Texture", 2D) = "white" {}
             _NoiseTex("Noise Texture", 2D) = "white" {}
-            _Speed("Speed", Float) = 1.0
+            _Speed("Speed", Range(0, 1)) = 1.0
             _Color("Color", Color) = (1, 1, 1, 1)
         }
 
