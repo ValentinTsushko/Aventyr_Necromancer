@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryPanelScript : MonoBehaviour
 {
@@ -24,10 +25,14 @@ public class InventoryPanelScript : MonoBehaviour
         Debug.Log("AddComponent<ItemProperties>() added");
         slotObject.GetComponent<SlotScript>().SetIsEmpty(false);
 
-        System.Type type = NewItem.GetType();
-        FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        slotObject.GetComponent<Image>().sprite = NewItem.GetComponent<ItemProperties>()._sprite;
+
+        System.Type sourceType = NewItem.GetType();
+        FieldInfo[] fields = sourceType.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        Debug.Log("field.GetValue(NewItem)");
         foreach (FieldInfo field in fields)
         {
+            Debug.Log("field.GetValue(NewItem)" + field.GetValue(NewItem));
             field.SetValue(slotObject.GetComponent<ItemProperties>(), field.GetValue(NewItem));
         }
     }

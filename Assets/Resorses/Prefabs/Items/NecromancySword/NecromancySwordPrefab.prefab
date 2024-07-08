@@ -48,6 +48,7 @@ MonoBehaviour:
   Cost: 89000
   Damage: 2
   PowerOfMagick: 1
+  sprite: {fileID: 21300000, guid: 3b316c52f7cb5ff4a94d0e53a1a128db, type: 3}
 --- !u!1 &5904523925661496661
 GameObject:
   m_ObjectHideFlags: 0

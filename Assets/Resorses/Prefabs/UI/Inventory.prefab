@@ -309,7 +309,6 @@ GameObject:
   - component: {fileID: 435157267538901676}
   - component: {fileID: 9201845821644175857}
   - component: {fileID: 4123950548853362119}
-  - component: {fileID: 2029701053251311614}
   m_Layer: 5
   m_Name: 'Slot '
   m_TagString: Untagged
@@ -431,22 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 0
---- !u!114 &2029701053251311614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795973143992434481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cost: 0
-  Damage: 0
-  PowerOfMagick: 0
+  IsEmpty: 1
 --- !u!1 &2208000332613248116
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,7 +579,6 @@ GameObject:
   - component: {fileID: 7750613570077718144}
   - component: {fileID: 8262446037037784077}
   - component: {fileID: 1435287056131985394}
-  - component: {fileID: 3637894094589466981}
   m_Layer: 5
   m_Name: Slot 8
   m_TagString: Untagged
@@ -717,22 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 0
---- !u!114 &3637894094589466981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2524185389388410758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cost: 0
-  Damage: 0
-  PowerOfMagick: 0
+  IsEmpty: 1
 --- !u!1 &2859499881273832912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2052,7 @@ GameObject:
   - component: {fileID: 6459261219223685628}
   - component: {fileID: 4066222832317891648}
   - component: {fileID: 8284881702184753623}
-  - component: {fileID: -5285394477122220205}
+  - component: {fileID: 3108502691762689374}
   m_Layer: 5
   m_Name: Slot 4
   m_TagString: Untagged
@@ -2140,7 +2108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2207,7 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 0
---- !u!114 &-5285394477122220205
+--- !u!114 &3108502691762689374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
