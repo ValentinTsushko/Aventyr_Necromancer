@@ -11,6 +11,7 @@ public class InventoryPanelScript : MonoBehaviour
 
     public void AddItem(GameObject NewItem) 
     {
+        Debug.Log("NewItem.GetComponent<ItemProperties>()._sprite     " + NewItem.GetComponent<ItemProperties>().GetSprite());
         Debug.Log("InventoryPanelScript");
         int i = 0;
         while (!Slots[i].GetComponent<SlotScript>().GetIsEmpty()) 
@@ -18,22 +19,21 @@ public class InventoryPanelScript : MonoBehaviour
             Debug.Log(i);
             i++;
         }
-
+        Debug.Log("Slots[i].name" + Slots[i].name); 
         GameObject slotObject = Slots[i].gameObject;
-        Debug.Log("AddComponent<ItemProperties>()");
-        slotObject.AddComponent<ItemProperties>();
-        Debug.Log("AddComponent<ItemProperties>() added");
-        slotObject.GetComponent<SlotScript>().SetIsEmpty(false);
 
-        slotObject.GetComponent<Image>().sprite = NewItem.GetComponent<ItemProperties>()._sprite;
+        Slots[i].gameObject.AddComponent<ItemProperties>();
+        Slots[i].gameObject.GetComponent<SlotScript>().SetIsEmpty(false);
 
-        System.Type sourceType = NewItem.GetType();
-        FieldInfo[] fields = sourceType.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-        Debug.Log("field.GetValue(NewItem)");
-        foreach (FieldInfo field in fields)
-        {
-            Debug.Log("field.GetValue(NewItem)" + field.GetValue(NewItem));
-            field.SetValue(slotObject.GetComponent<ItemProperties>(), field.GetValue(NewItem));
-        }
+        Slots[i].gameObject.GetComponent<SlotScript>().SlotImageChenge(NewItem.GetComponent<ItemProperties>().GetSprite());
+
+        //System.Type sourceType = NewItem.GetType();
+        //FieldInfo[] fields = sourceType.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        //Debug.Log("field.GetValue(NewItem)");
+        //foreach (FieldInfo field in fields)
+        //{
+        //    Debug.Log("field.GetValue(NewItem)" + field.GetValue(NewItem));
+        //    field.SetValue(slotObject.GetComponent<ItemProperties>(), field.GetValue(NewItem));
+        //}
     }
 }

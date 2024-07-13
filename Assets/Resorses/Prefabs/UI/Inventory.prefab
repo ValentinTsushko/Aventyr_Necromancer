@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 435157267538901676}
   - component: {fileID: 9201845821644175857}
   - component: {fileID: 4123950548853362119}
+  - component: {fileID: 2267502516715445644}
   m_Layer: 5
   m_Name: 'Slot '
   m_TagString: Untagged
@@ -364,7 +365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -430,7 +431,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 1
+  IsEmpty: 0
+  ImgObj: {fileID: 435157267538901676}
+--- !u!114 &2267502516715445644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795973143992434481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cost: 0
+  Damage: 0
+  PowerOfMagick: 0
+  sprite: {fileID: 0}
 --- !u!1 &2208000332613248116
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 1
+  ImgObj: {fileID: 1674560947694710774}
 --- !u!1 &2524185389388410758
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +598,7 @@ GameObject:
   - component: {fileID: 7750613570077718144}
   - component: {fileID: 8262446037037784077}
   - component: {fileID: 1435287056131985394}
+  - component: {fileID: -2592422890366219058}
   m_Layer: 5
   m_Name: Slot 8
   m_TagString: Untagged
@@ -634,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -700,7 +720,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 1
+  IsEmpty: 0
+  ImgObj: {fileID: 7750613570077718144}
+--- !u!114 &-2592422890366219058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2524185389388410758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cost: 0
+  Damage: 0
+  PowerOfMagick: 0
+  sprite: {fileID: 0}
 --- !u!1 &2859499881273832912
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 1
+  ImgObj: {fileID: 1680235588680754175}
 --- !u!1 &3044973375536709303
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,6 +1009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 1
+  ImgObj: {fileID: 6815981528122264364}
 --- !u!1 &3049398321115878223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1110,7 @@ GameObject:
   - component: {fileID: 4631208871588999002}
   - component: {fileID: 1761946586966666337}
   - component: {fileID: 2073146155491705621}
+  - component: {fileID: 1874689868882142029}
   m_Layer: 5
   m_Name: Slot 10
   m_TagString: Untagged
@@ -1126,7 +1166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 3b316c52f7cb5ff4a94d0e53a1a128db, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1192,7 +1232,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 1
+  IsEmpty: 0
+  ImgObj: {fileID: 4631208871588999002}
+--- !u!114 &1874689868882142029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062696754955899536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cost: 0
+  Damage: 0
+  PowerOfMagick: 0
+  sprite: {fileID: 0}
 --- !u!1 &3414997860255784800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 1
+  ImgObj: {fileID: 2389511228212247802}
 --- !u!1 &4335482403841964021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,6 +1738,7 @@ GameObject:
   - component: {fileID: 2783637661845680653}
   - component: {fileID: 6810788950507630822}
   - component: {fileID: 7701563207617833311}
+  - component: {fileID: -7751962565869390049}
   m_Layer: 5
   m_Name: Slot 2
   m_TagString: Untagged
@@ -1735,7 +1794,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 3b316c52f7cb5ff4a94d0e53a1a128db, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1801,7 +1860,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 1
+  IsEmpty: 0
+  ImgObj: {fileID: 2783637661845680653}
+--- !u!114 &-7751962565869390049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5726813502854656059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cost: 0
+  Damage: 0
+  PowerOfMagick: 0
+  sprite: {fileID: 0}
 --- !u!1 &5985597010367732745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,7 +2128,7 @@ GameObject:
   - component: {fileID: 6459261219223685628}
   - component: {fileID: 4066222832317891648}
   - component: {fileID: 8284881702184753623}
-  - component: {fileID: 3108502691762689374}
+  - component: {fileID: 4734526461074411329}
   m_Layer: 5
   m_Name: Slot 4
   m_TagString: Untagged
@@ -2109,7 +2185,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2175,7 +2251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 0
---- !u!114 &3108502691762689374
+  ImgObj: {fileID: 6459261219223685628}
+--- !u!114 &4734526461074411329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2190,6 +2267,7 @@ MonoBehaviour:
   Cost: 0
   Damage: 0
   PowerOfMagick: 0
+  sprite: {fileID: 0}
 --- !u!1 &6628677585200002482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,6 +2482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 1
+  ImgObj: {fileID: 2821067597351845500}
 --- !u!1 &7155875925821969442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2575,7 @@ GameObject:
   - component: {fileID: 4237317252427278527}
   - component: {fileID: 1074447175846808794}
   - component: {fileID: 8904841214584366055}
+  - component: {fileID: -5976952558475741973}
   m_Layer: 5
   m_Name: Slot 6
   m_TagString: Untagged
@@ -2551,7 +2631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 3b316c52f7cb5ff4a94d0e53a1a128db, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2617,7 +2697,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a549254ca7ca64494ba3225f14e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsEmpty: 1
+  IsEmpty: 0
+  ImgObj: {fileID: 4237317252427278527}
+--- !u!114 &-5976952558475741973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179228834933950478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cost: 0
+  Damage: 0
+  PowerOfMagick: 0
+  sprite: {fileID: 0}
 --- !u!1 &7256877584914332151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,3 +2929,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEmpty: 1
+  ImgObj: {fileID: 340557452590604558}

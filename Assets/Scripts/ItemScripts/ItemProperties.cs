@@ -9,10 +9,10 @@ public class ItemProperties : MonoBehaviour
     public int Damage;
     public int PowerOfMagick;
 
-    private Sprite sprite;
+    [SerializeField] private Sprite sprite;
 
-    public Sprite _sprite
+    public Sprite GetSprite()
     {
-        get { return sprite; }
+        return sprite;
     }
 }
