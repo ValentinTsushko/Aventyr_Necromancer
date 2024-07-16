@@ -137,7 +137,7 @@ MonoBehaviour:
   - {fileID: 6750292916704648879}
   - {fileID: 3414997860255784800}
   - {fileID: 2208000332613248116}
-  inventoryPanel: {fileID: 7942350221439144862}
+  inventoryPanel: {fileID: 3049398321115878223}
 --- !u!1 &1051731115734454692
 GameObject:
   m_ObjectHideFlags: 0

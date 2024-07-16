@@ -6773,7 +6773,7 @@ Transform:
   m_GameObject: {fileID: 152298197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6126, y: -0.234, z: -1.3501}
+  m_LocalPosition: {x: -0.657, y: -0.241, z: -1.3501}
   m_LocalScale: {x: 0.17245229, y: 0.15235163, z: 3.2003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6841,7 +6841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbe63eb73a7ac64a850d04d88f8ea52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: HouseNearThePark 2
   spawnPointNummer: 0
   spawnPointNewNummer: {fileID: 6515708926167383054, guid: 618b1564cc7248d4fb14d75c33dea75a, type: 3}
 --- !u!65 &152298202
@@ -7095,14 +7095,14 @@ Transform:
   m_GameObject: {fileID: 160945718}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.030599976, y: 2.57, z: 0}
+  m_LocalPosition: {x: 0, y: 1.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2036412618}
   - {fileID: 71581524}
   - {fileID: 838053516}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 258570089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &160945720
 SpriteRenderer:
@@ -11420,6 +11420,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5136864192934544017, guid: 36837d94ac809f644bc9dfd16a64519c, type: 3}
   m_PrefabInstance: {fileID: 257103753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &258570088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258570089}
+  m_Layer: 0
+  m_Name: Houses near gates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &258570089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258570088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.030599976, y: 1.1899999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 483153511}
+  - {fileID: 406477626}
+  - {fileID: 652076695}
+  - {fileID: 160945719}
+  m_Father: {fileID: 1363763631}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &258839275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3667876605364569480, guid: bd96c63691970d243a94a65d6c9f7c72, type: 3}
@@ -17088,7 +17123,7 @@ Transform:
   m_GameObject: {fileID: 406477625}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.030599976, y: 1.1899999, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17096,7 +17131,7 @@ Transform:
   - {fileID: 26132904}
   - {fileID: 4942850111463711678}
   - {fileID: 1923215645}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 258570089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &406477627
 SpriteRenderer:
@@ -21001,13 +21036,13 @@ Transform:
   m_GameObject: {fileID: 483153509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.030599976, y: -1.1899999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1000716649}
   - {fileID: 1836195582}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 258570089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &484814749
 PrefabInstance:
@@ -25904,7 +25939,7 @@ Transform:
   m_GameObject: {fileID: 652076693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -2.4400003, z: -0.30999997}
+  m_LocalPosition: {x: -0.4306, y: -3.63, z: -0.30999997}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25914,7 +25949,7 @@ Transform:
   - {fileID: 213035854}
   - {fileID: 244463974}
   - {fileID: 150508188}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 258570089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &652896487
 PrefabInstance:
@@ -27431,6 +27466,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8231081885540523488, guid: bf2bcca109de77f47ad0ad6a317c5f77, type: 3}
   m_PrefabInstance: {fileID: 678795892}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &680661157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680661158}
+  m_Layer: 0
+  m_Name: Houses near the park
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680661158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680661157}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.7250001, y: 2.7639997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1577674972}
+  - {fileID: 1324635218}
+  - {fileID: 1492792463}
+  m_Father: {fileID: 1363763631}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &685474363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31612,7 +31681,7 @@ Transform:
   m_GameObject: {fileID: 796610944}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6126, y: -0.234, z: -1.3501}
+  m_LocalPosition: {x: -0.672, y: -0.332, z: -1.3501}
   m_LocalScale: {x: 0.17245229, y: 0.15235163, z: 3.2003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31680,7 +31749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbe63eb73a7ac64a850d04d88f8ea52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: HouseNearThePark 1
   spawnPointNummer: 0
   spawnPointNewNummer: {fileID: 6515708926167383054, guid: 618b1564cc7248d4fb14d75c33dea75a, type: 3}
 --- !u!65 &796610949
@@ -33826,7 +33895,7 @@ GameObject:
   - component: {fileID: 852110801}
   - component: {fileID: 852110802}
   m_Layer: 0
-  m_Name: HouseNearTheGates_1 (5)
+  m_Name: HouseInTheCountryside 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33841,13 +33910,13 @@ Transform:
   m_GameObject: {fileID: 852110800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.213, y: 8.014, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 424419615}
   - {fileID: 767619818}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 2104471551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &852110802
 SpriteRenderer:
@@ -52300,7 +52369,7 @@ GameObject:
   - component: {fileID: 1324635218}
   - component: {fileID: 1324635219}
   m_Layer: 0
-  m_Name: HouseNearTheGates_1 (2)
+  m_Name: HouseNearThePark 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52315,13 +52384,13 @@ Transform:
   m_GameObject: {fileID: 1324635217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.725, y: 2.764, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 819763343}
   - {fileID: 796610945}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 680661158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1324635219
 SpriteRenderer:
@@ -54954,16 +55023,9 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 483153511}
-  - {fileID: 406477626}
-  - {fileID: 1577674972}
-  - {fileID: 1449659619}
-  - {fileID: 1324635218}
-  - {fileID: 852110801}
-  - {fileID: 1492792463}
-  - {fileID: 1408018216}
-  - {fileID: 652076695}
-  - {fileID: 160945719}
+  - {fileID: 2104471551}
+  - {fileID: 680661158}
+  - {fileID: 258570089}
   - {fileID: 1237894476}
   - {fileID: 29798670}
   - {fileID: 1578891280}
@@ -56476,7 +56538,7 @@ GameObject:
   - component: {fileID: 1408018216}
   - component: {fileID: 1408018217}
   m_Layer: 0
-  m_Name: HouseNearTheGates_1 (6)
+  m_Name: HouseInTheCountryside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56491,13 +56553,13 @@ Transform:
   m_GameObject: {fileID: 1408018215}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.218, y: 8.014, z: 0}
+  m_LocalPosition: {x: -1.995, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1400838742}
   - {fileID: 1527637666}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 2104471551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1408018217
 SpriteRenderer:
@@ -58158,7 +58220,7 @@ GameObject:
   - component: {fileID: 1449659619}
   - component: {fileID: 1449659620}
   m_Layer: 0
-  m_Name: HouseNearTheGates_1 (4)
+  m_Name: HouseInTheCountryside 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58173,13 +58235,13 @@ Transform:
   m_GameObject: {fileID: 1449659618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.001, y: 8.014, z: 0}
+  m_LocalPosition: {x: 3.7880003, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 785685752}
   - {fileID: 78213426}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 2104471551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1449659620
 SpriteRenderer:
@@ -60144,7 +60206,7 @@ GameObject:
   - component: {fileID: 1492792463}
   - component: {fileID: 1492792464}
   m_Layer: 0
-  m_Name: HouseNearTheGates_1 (3)
+  m_Name: HouseNearThePark 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60159,13 +60221,13 @@ Transform:
   m_GameObject: {fileID: 1492792462}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.725, y: 4.054, z: 0}
+  m_LocalPosition: {x: 0, y: 1.2900007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1920450993}
   - {fileID: 152298198}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 680661158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1492792464
 SpriteRenderer:
@@ -63585,7 +63647,7 @@ GameObject:
   - component: {fileID: 1577674972}
   - component: {fileID: 1577674973}
   m_Layer: 0
-  m_Name: HouseNearTheGates_1 (1)
+  m_Name: HouseNearThePark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63600,13 +63662,13 @@ Transform:
   m_GameObject: {fileID: 1577674971}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.725, y: 1.469, z: 0}
+  m_LocalPosition: {x: 0, y: -1.2949996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1130490829}
   - {fileID: 1854679459}
-  m_Father: {fileID: 1363763631}
+  m_Father: {fileID: 680661158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1577674973
 SpriteRenderer:
@@ -75733,7 +75795,7 @@ Transform:
   m_GameObject: {fileID: 1854679458}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6126, y: -0.234, z: -1.3501}
+  m_LocalPosition: {x: -0.685, y: -0.24, z: -1.3501}
   m_LocalScale: {x: 0.17245229, y: 0.15235163, z: 3.2003}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75801,7 +75863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbe63eb73a7ac64a850d04d88f8ea52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: HouseNearThePark
   spawnPointNummer: 0
   spawnPointNewNummer: {fileID: 6515708926167383054, guid: 618b1564cc7248d4fb14d75c33dea75a, type: 3}
 --- !u!65 &1854679463
@@ -86692,6 +86754,40 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36837d94ac809f644bc9dfd16a64519c, type: 3}
+--- !u!1 &2104471550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104471551}
+  m_Layer: 0
+  m_Name: Houses in the countryside
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104471551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104471550}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.213, y: 8.014, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1449659619}
+  - {fileID: 852110801}
+  - {fileID: 1408018216}
+  m_Father: {fileID: 1363763631}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2104706751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8481987955335322156, guid: f88149238ea3fa94b8f9124eee6428ca, type: 3}

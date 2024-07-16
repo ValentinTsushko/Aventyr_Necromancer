@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InventoryPanelScript : MonoBehaviour
 {
     [SerializeField] private List<GameObject> Slots;
-    [SerializeField] private Transform inventoryPanel;
+    [SerializeField] private GameObject inventoryPanel;
 
     public void AddItem(GameObject NewItem) 
     {
@@ -35,5 +35,9 @@ public class InventoryPanelScript : MonoBehaviour
         //    Debug.Log("field.GetValue(NewItem)" + field.GetValue(NewItem));
         //    field.SetValue(slotObject.GetComponent<ItemProperties>(), field.GetValue(NewItem));
         //}
+    }
+    public GameObject GetInventoryPanel()
+    {
+        return inventoryPanel;
     }
 }

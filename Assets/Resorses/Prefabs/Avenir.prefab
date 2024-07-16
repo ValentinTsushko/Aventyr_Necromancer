@@ -338,6 +338,7 @@ GameObject:
   - component: {fileID: 8109435921746799447}
   - component: {fileID: 2604373825687164661}
   - component: {fileID: 279962504767360709}
+  - component: {fileID: 2622141383729791214}
   m_Layer: 0
   m_Name: Avenir
   m_TagString: Player
@@ -470,6 +471,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Detector: {fileID: 6498652695942973261}
   AS: {fileID: 8788779879584699544}
+--- !u!114 &2622141383729791214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525996882496143504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e234bd5606c0b6347bcc71e0570f40cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryPref: {fileID: 779346236660314490, guid: 48245279150616941aca3c31803aba5c, type: 3}
 --- !u!1 &8719182677994317942
 GameObject:
   m_ObjectHideFlags: 0
