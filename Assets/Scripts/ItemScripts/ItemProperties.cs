@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemProperties : MonoBehaviour
+public class ItemProperties : IteminterBaceClass
 {
     public int Cost;
     public int Damage;

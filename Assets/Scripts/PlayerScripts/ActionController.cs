@@ -41,7 +41,6 @@ public class ActionController : MonoBehaviour
           RectTransform rectTransform = uiElement.GetComponent<RectTransform>();
           rectTransform.anchoredPosition = Vector2.zero;
           rectTransform.localScale = Vector3.one;
-          rectTransform.sizeDelta = new Vector2(5, 5);  // Установить размер (по желанию)
           IsOpened = true;
         
     }

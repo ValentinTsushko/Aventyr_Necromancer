@@ -24,9 +24,6 @@ public class SlotScript : MonoBehaviour
     }
     public void SlotImageChenge(Sprite sprite)
     {
-        Debug.Log("sprite     " + sprite == null);
-        Debug.Log("ImgObj.sprite   " + ImgObj.sprite == null);
         ImgObj.sprite = sprite;
-        Debug.Log("ImgObj.sprite    " + ImgObj.sprite == null);
     }
 }

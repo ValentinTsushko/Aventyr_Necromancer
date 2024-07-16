@@ -27,9 +27,12 @@ public class InventoryPanelScript : MonoBehaviour
 
         Slots[i].gameObject.GetComponent<SlotScript>().SlotImageChenge(NewItem.GetComponent<ItemProperties>().GetSprite());
 
-        //System.Type sourceType = NewItem.GetType();
-        //FieldInfo[] fields = sourceType.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-        //Debug.Log("field.GetValue(NewItem)");
+        System.Type sourceType = NewItem.GetType();
+        FieldInfo[] fields = NewItem.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        foreach (FieldInfo field in fields)
+        {
+            Debug.Log($"Field found: {field.Name}");
+        }
         //foreach (FieldInfo field in fields)
         //{
         //    Debug.Log("field.GetValue(NewItem)" + field.GetValue(NewItem));
