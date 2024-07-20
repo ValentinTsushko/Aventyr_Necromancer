@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622bb4988aacde04b8914e4683bb60cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemName: Necromancy sword
   Cost: 89000
   Damage: 2
   PowerOfMagick: 1
